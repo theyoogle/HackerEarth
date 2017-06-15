@@ -1,0 +1,7 @@
+from __future__ import print_function
+import sys
+for i in sys.stdin:
+    if int(i)==42:
+        break
+    else:
+        print(i, end='')
