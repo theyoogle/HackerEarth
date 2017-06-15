@@ -1,0 +1,8 @@
+import math
+n = input()
+nums = raw_input()
+nums = nums.split(' ')
+s = 1
+for i in nums:
+    s = (s * int(i)) % (math.pow(10,9)+7)
+print int(s)
