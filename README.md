@@ -1,2 +1,1 @@
-# hello-world
-FOR TEST
+Hacker Earth Problems Solutions provided by YooGle Sharma
