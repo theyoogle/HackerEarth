@@ -1,0 +1,21 @@
+l = input()
+n = input()
+pics = []
+i = 0
+while i<n:
+    inp = raw_input()
+    inp = inp.split(' ')
+    pics.append(int(inp[0]))
+    pics.append(int(inp[1]))
+    i+=1
+    
+i = 0
+while i<n*2:
+    if pics[i] < l or pics[i+1] < l:
+        print "UPLOAD ANOTHER"
+    if pics[i] >= l and pics[i+1] >=l:
+        if pics[i] == l and pics[i+1] == l or pics[i] == pics[i+1]:
+            print "ACCEPTED"
+        else:
+            print "CROP IT"
+    i+=2
