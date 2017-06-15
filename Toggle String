@@ -1,0 +1,15 @@
+name = raw_input()
+name = list(name)
+name1 = []
+i = 0
+for ch in name:
+    if ch.isupper() == True:
+        name[i] = ch.lower()
+    else:
+        name[i] = ch.upper()
+    i+=1
+st = ''
+for i in name:
+    st+= i + ''
+    
+print st
