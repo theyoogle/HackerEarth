@@ -1,0 +1,8 @@
+letter = raw_input()
+dict1 = {}
+for i in range(0,10):
+    dict1[i] = 0
+for i in letter:
+    dict1[int(i)]+=1
+for key,value in dict1.items():
+    print key,value
