@@ -1,0 +1,12 @@
+inp = raw_input()
+inp = inp.split(' ')
+l = int(inp[0])
+r = int(inp[1])
+k = int(inp[2])
+i = l
+count = 0
+while i<=r:
+    if i%k == 0:
+        count+=1
+    i+=1
+print count
