@@ -1,0 +1,20 @@
+from __future__ import print_function
+n = input()
+names = []
+i = 0
+while i<n:
+    names.append(raw_input())
+    i+=1
+chdict = {}
+for i,ch in enumerate(list(map(chr, range(97,123))), start=1):
+    chdict[ch] = i
+for name in names:
+    rev = name[::-1]
+    for i,j in zip(name,rev):
+        p = chdict[i] + chdict[j]
+        if p>26:
+            p = p%26
+        if p==0:
+            p = 26
+        print(chr(p+96),end='')
+    print()
