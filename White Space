@@ -1,0 +1,4 @@
+name = raw_input()
+list1 = name.split(' ')
+n = len(list1)
+print n-1
