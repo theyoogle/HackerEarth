@@ -1,0 +1,14 @@
+num, n = raw_input().split()
+n = int(n)
+num = list(num)
+i = 0
+while i<n:
+    if num[i] == '9':
+        n+=1
+    else:
+        num[i] = '9'
+    i+=1
+st = ''
+for i in num:
+    st+=i
+print int(st)
