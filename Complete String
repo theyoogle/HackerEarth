@@ -1,0 +1,17 @@
+n = input()
+i = 0
+names = []
+while i<n:
+    names.append(raw_input())
+    i+=1
+chars = list(map(chr,range(97,123)))
+for name in names:
+    c = 0
+    for i in chars:
+        if i not in name:
+            c = 1
+            break
+    if c==0:
+        print "YES"
+    else:
+        print "NO"
