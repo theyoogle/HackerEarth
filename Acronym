@@ -1,0 +1,19 @@
+from __future__ import print_function
+n = input()
+i = 0
+dwords = []
+while i<n:
+    dwords.append(raw_input())
+    i+=1
+m = input()
+name = raw_input().split()
+acr = []
+for i in name:
+    if i not in dwords:
+        acr.append(i[0].upper())
+        acr.append('.')
+acr = acr[:-1]
+st = ''
+for i in acr:
+    st+= i
+print(st)
