@@ -1,0 +1,15 @@
+n = input()
+i = 0
+sites = []
+vov = ['a','e','i','o','u']
+while i<n:
+    sites.append(raw_input())
+    i+=1
+for site in sites:
+    real = len(site)
+    site = site[4:]
+    count = 1
+    for i in site:
+        if i not in vov:
+            count+=1
+    print "%s/%s"%(count,real)
