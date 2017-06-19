@@ -1,0 +1,16 @@
+n = input()
+names = []
+for i in range(n):
+    names.append(raw_input())
+chars = map(chr, range(97,123))
+chardict = {}
+for i,ch in enumerate(chars, start=1):
+    chardict[ch] = i
+for name in names:
+    mul = 1
+    if name == name[::-1]:
+        print "Palindrome"
+    else:
+        for i in name:
+            mul*= chardict[i]
+        print mul
