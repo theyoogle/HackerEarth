@@ -1,0 +1,9 @@
+n = input()
+a,b,p = map(int, raw_input().split())
+for i in range(n):
+    for j in range(n):
+        if (abs(a-i) > abs(b-j)):
+            print max(0, p - abs(a-i)),
+        else:
+            print max(0, p - abs(b-j)),
+    print
