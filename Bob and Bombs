@@ -1,0 +1,8 @@
+import re
+n = input()
+for _ in xrange(n):
+    name = raw_input()
+    ws = len(re.findall('W', name))
+    substr = re.sub(r'W{0,2}BW{0,2}', '', name)
+    st = len(re.findall('W', substr))
+    print ws - st
