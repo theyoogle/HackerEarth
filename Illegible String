@@ -1,0 +1,6 @@
+input()
+s = raw_input()
+s = s.replace('w','vv')
+maxl = len(s)
+minl = len(s.replace('vv','w'))
+print minl, maxl
